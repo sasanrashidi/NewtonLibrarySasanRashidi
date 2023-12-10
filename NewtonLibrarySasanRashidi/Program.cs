@@ -67,42 +67,48 @@ class Program
                     break;
 
                 case "7":
-                    Console.WriteLine("Choose what you want to clear:");
-                    Console.WriteLine("a. Clear all users");
-                    Console.WriteLine("b. Clear a specific user");
-                    Console.WriteLine("c. Clear all books");
-                    Console.WriteLine("d. Clear a specific book");
-                    Console.WriteLine("e. Clear all authors");
-                    Console.WriteLine("f. Clear a specific author");
+
+                    Console.WriteLine("a. Clear ALL");
+                    Console.WriteLine("b. Clear all users");
+                    Console.WriteLine("c. Clear a specific user");
+                    Console.WriteLine("d. Clear all books");
+                    Console.WriteLine("e. Clear a specific book");
+                    Console.WriteLine("f. Clear all authors");
+                    Console.WriteLine("g. Clear a specific author");
 
                     string subInput = Console.ReadLine();
                     switch (subInput)
                     {
+
                         case "a":
-                            data.ClearAllUsers();
+                            data.ClearAll();
                             break;
 
                         case "b":
+                            data.ClearAllUsers();
+                            break;
+
+                        case "c":
                             Console.WriteLine("Enter the user ID to clear:");
                             int userId = Convert.ToInt32(Console.ReadLine());
                             data.ClearUserById(userId);
                             break;
 
-                        case "c":
+                        case "d":
                             data.ClearAllBooks();
                             break;
 
-                        case "d":
+                        case "e":
                             Console.WriteLine("Enter the book ID to clear:");
                             int bookId = Convert.ToInt32(Console.ReadLine());
                             data.ClearBookById(bookId);
                             break;
 
-                        case "e":
+                        case "f":
                             data.ClearAllAuthors();
                             break;
 
-                        case "f":
+                        case "g":
                             Console.WriteLine("Enter the author ID to clear:");
                             int authorId = Convert.ToInt32(Console.ReadLine());
                             data.ClearAuthorById(authorId);
@@ -125,6 +131,3 @@ class Program
         }
     }
 }
-
-
-
