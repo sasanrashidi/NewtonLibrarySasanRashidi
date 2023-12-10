@@ -5,13 +5,13 @@ namespace NewtonLibrarySasanRashidi.Models
 {
     public class Author
     {
-        public int Id { get; set; }
+        public int Id { get; set; } // Ett unikt nummer för varje författare
 
-        [MaxLength(50)]
+        [MaxLength(50)]// Begränsar längden på författarens namn till högst 50 tecken
+        public string Name { get; set; } // Författarens namn
 
-        public string Name { get; set; }
-
-        public ICollection<Book>? Books { get; set; }
+        public ICollection<Book>? Books { get; set; } // En lista över böcker som tillhör författaren
+        // Märket "?" innebär att Books kan vara null (inga böcker kopplade än)
 
 
     }

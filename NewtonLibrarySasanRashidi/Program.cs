@@ -74,7 +74,6 @@ class Program
                     Console.WriteLine("d. Clear a specific book");
                     Console.WriteLine("e. Clear all authors");
                     Console.WriteLine("f. Clear a specific author");
-                    Console.WriteLine("g. Clear all loan cards");
 
                     string subInput = Console.ReadLine();
                     switch (subInput)
@@ -107,10 +106,6 @@ class Program
                             Console.WriteLine("Enter the author ID to clear:");
                             int authorId = Convert.ToInt32(Console.ReadLine());
                             data.ClearAuthorById(authorId);
-                            break;
-
-                        case "g":
-                            data.ClearAllUserCards();
                             break;
 
                         default:
