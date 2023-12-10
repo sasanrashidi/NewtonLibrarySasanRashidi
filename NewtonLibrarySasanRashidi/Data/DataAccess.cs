@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
+using NewtonLibrarySasanRashidi.Models;
 using System.ComponentModel;
 using Helpers;
 
@@ -291,16 +292,6 @@ namespace NewtonLibrarySasanRashidi.Data
             }
         }
 
-        public void ClearAllUserCards()
-        {
-            using (var context = new Context())
-            {
-                var allUserCards = context.UserCards.ToList();
-                context.RemoveRange(allUserCards);
-
-                context.SaveChanges();
-            }
-        }
     }
 }
 
