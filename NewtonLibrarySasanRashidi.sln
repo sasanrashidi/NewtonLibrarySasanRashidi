@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonLibrarySasanRashidi", "NewtonLibrarySasanRashidi\NewtonLibrarySasanRashidi.csproj", "{F5F643AC-AB96-4640-9676-C1F9C8C0A611}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "..\NewtonLibrary\SeidoHelpers-main\Helpers\Helpers.csproj", "{581287DC-037E-4E44-919C-6079CCD987F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F5F643AC-AB96-4640-9676-C1F9C8C0A611}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5F643AC-AB96-4640-9676-C1F9C8C0A611}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5F643AC-AB96-4640-9676-C1F9C8C0A611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581287DC-037E-4E44-919C-6079CCD987F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581287DC-037E-4E44-919C-6079CCD987F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581287DC-037E-4E44-919C-6079CCD987F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581287DC-037E-4E44-919C-6079CCD987F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
