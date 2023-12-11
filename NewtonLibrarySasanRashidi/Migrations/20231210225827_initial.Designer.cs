@@ -12,7 +12,7 @@ using NewtonLibrarySasanRashidi.Data;
 namespace NewtonLibrarySasanRashidi.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20231210223412_initial")]
+    [Migration("20231210225827_initial")]
     partial class initial
     {
         /// <inheritdoc />

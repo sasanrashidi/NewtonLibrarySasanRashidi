@@ -1,8 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace NewtonLibrarySasanRashidi.Models
 {
     public class UserCard
     {
+        [Key]
         public int Id { get; set; } // Ett unikt nummer för varje användarkort
 
         // En säkerhets-PIN för användarkortet som genereras slumpmässigt mellan 1000 och 9999

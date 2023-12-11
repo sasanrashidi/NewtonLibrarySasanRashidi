@@ -5,6 +5,7 @@ namespace NewtonLibrarySasanRashidi.Models
 {
     public class Author
     {
+        [Key]
         public int Id { get; set; } // Ett unikt nummer för varje författare
 
         [MaxLength(50)]// Begränsar längden på författarens namn till högst 50 tecken
@@ -16,4 +17,3 @@ namespace NewtonLibrarySasanRashidi.Models
 
     }
 }
-

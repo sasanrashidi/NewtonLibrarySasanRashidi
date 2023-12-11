@@ -292,7 +292,6 @@ namespace NewtonLibrarySasanRashidi.Data
                 }
             }
         }
-
     }
 }
 

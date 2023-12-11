@@ -6,6 +6,7 @@ namespace NewtonLibrarySasanRashidi.Models
     public class Book
     {
         //Egenskaper för en bok...
+        [Key]
         public int Id { get; set; } // Bokens ID-nummer
 
         [MaxLength(50)]
@@ -73,4 +74,3 @@ namespace NewtonLibrarySasanRashidi.Models
 
     }
 }
-
